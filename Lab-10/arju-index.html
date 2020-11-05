@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color: red;
+		}
+		
+		td{
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Enter Details</h1>
+<form action="arju.php" method="POST">
+	<table align="center" style="padding: 5px;">
+		<tr>
+	<td>Begining Date</td>
+	<td><input type="Date" name="start_date" value="0000-00-00" ></td>
+</tr>
+	<tr><td>Ending Date</td>
+	<td><input type="Date" name="end_date" value="0000-00-00"></td></tr>
+	<tr><td>Vendor Name</td>
+	<td><input type="text" name="name" value=""></td>
+</tr>
+<tr align="center">
+		<td>
+	<input type="radio" name="sort" value="sortbydate">Sort by date
+</td>
+<td>
+	<input type="radio" name="sort" value="sortbyname" checked="checked">Sort by name
+</td>
+
+	</tr>
+	<tr align="center">
+<td>
+	<button type="button"><a href="arju-insert.html">Insert Records</a></button>
+</td>
+		<td><input type="Submit" name="" value="Submit"></td></tr>
+
+</table>
+</form>
+
+</body>
+</html>
